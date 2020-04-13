@@ -1,0 +1,411 @@
+/* 커스텀 */
+
+.con {
+    max-width: 1280px;
+}
+
+/* 탑바 */
+
+.top-bar {
+    transition:background-color 0.3s;
+    border-bottom:2px solid transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+}
+
+.top-bar .menu-box-1 > ul > li > a {
+    padding:30px 10px;
+    color:white;
+    position:relative;
+}
+
+/* 탑바 - 호버 */
+
+.top-bar:hover, .top-bar.hover {
+    background-color: #fff;
+    border-bottom-color: #000;
+}
+
+.top-bar:hover .menu-box-1 > ul > li > a, .top-bar.hover .menu-box-1 > ul > li > a {
+    color: #d697bd;
+}
+
+
+/* 페이지 인디케이터 */
+
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+}
+
+.pagination a.active::after {
+    background-color: #fff;
+    transform: translateX(-50%) translateY(-50%) scale(2);
+}
+
+.pagination a .hover-text {
+    display:none;
+}
+
+.pagination a::after {
+    content: "";
+    transition: box-shadow 0.5s ease;
+    width: 7px;
+    height: 7px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+/* 페이지 공통 시작 */
+
+.page {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.page  > .inner {
+    width: 800px;
+    position: absolute;
+    background-color: rgba(238,238,238,1);
+    border: 5px solid #ffd1ff; 
+    height: 400px;
+    top: 65%;
+    left: 50%;
+    transform:translatex(-50%) translatey(-50%);
+    border-radius: 30px;
+}
+
+.page > .title {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page > .title > span > i {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translatey(-50%);
+}
+
+.page > .title > span > i:nth-of-type(2) {
+    left: auto;
+    right: -50px;
+    transform: translatey(-50%);
+}
+
+
+.page > .inner > .text-box > .text-box-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+}
+
+
+.page > .inner > .text-box > .text-box-inner > div {
+    white-space: nowrap;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.page > .inner >  .text-box > .text-box-inner > div > span.address {
+    margin-left: 85px;
+}
+
+
+/* 페이지1 포트폴리오 홈 */
+
+
+.page-1 {
+    margin:0;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);  
+}
+
+.bg {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translateY(-50%);
+    border: 3px solid #000;
+    
+}
+
+h1 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+/* 페이지2 프로필 시작 */
+
+.page-2 {
+    margin: 0;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); 
+}
+
+.page-2 > .inner > .cell{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.page-2 .profile {
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 300px;
+}
+
+
+/* 페이지 3 히스토리 시작 */
+
+.page-3 {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+}
+
+
+/* 페이지 4 스킬 시작 */
+
+.page-4 {
+    margin:0;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.progressbar-container {
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.progress-value {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-size: .875rem;
+  padding-bottom: .25rem;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  color: #273238;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #273238;
+  border-radius: 8px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+/* 페이지5 디자인 시작 */
+
+.page-5 {
+    margin: 0;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); 
+}
+
+.content {
+  margin: auto;
+  padding: 20px;
+}
+
+.slider {
+  margin: 30px auto 50px;
+}
+
+.image {
+  padding: 10px; 
+}
+
+.image:hover {
+  transform: scale(1.1);     
+}
+
+.img {
+  border: 5px solid #FFF;
+  display: block;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.slick-text-box h4 {
+    letter-spacing: -1px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    order: 1;
+    text-align: center;
+}
+
+/* progress바 */
+
+.progress {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .4s ease-in-out;
+}
+
+
+/* 페이지6 모작 & 리디자인 시작 */
+
+.page-6 {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+}
+
+
+.page-6 > ul {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 20%;
+}
+
+.page-6 > ul > li {
+    width: calc( 100% / 3);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.page-6 > ul > li > div {
+    position: relative;
+}
+
+.page-6 > ul > li > div > a > img {
+    width: 300px;
+    height: 300px;
+}
+
+.page-6 > ul > li > div > a > img:hover {
+    transform: scale(1.2);
+}
+
+.page-6 > ul > li > div > .text-box-1 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.page-6 > ul > li > div > .text-box-1 .tit {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+
+/* footer 시작 */
+
+.footer {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #e5b3d9 0%, #e9a9da  100%);
+    height: 80px;
+}
+
+.footer > .footer-wrap {
+    text-align: center;
+}
+
+.footer > .footer-wrap > ul > li > a {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.footer > .footer-wrap .footer-social {
+    font-size: 30px;
+    margin: 0 40px;
+    margin-left: 40%;
+}
+
+.footer .footer-wrap ul li a {
+    margin: 0 20px;
+    color: #000;
+}
+
+
+.copyright-wrap {
+    margin: 0;
+  background-image: linear-gradient(to top, #e5b3d9 0%, #ec8fd6  100%);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+

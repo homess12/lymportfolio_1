@@ -2,9 +2,309 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>lymportfolio_1</title>
+    <title>lym port folio_1</title>
+    
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 제이쿼리 불러오기 프로그래스 바 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+    <!-- 스크롤리 파이 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    zzz111
+    <div class="top-bar relative">
+        <nav class="menu-box-1 text-align-center line-height-0-ch-only">
+            <ul class="row inline-block">
+                <li class="cell page-2-menu-item"><a href="#page-2" class="block">profile</a></li>
+                <li class="cell page-3-menu-item"><a href="#page-3" class="block">history</a></li>
+                <li class="cell page-4-menu-item"><a href="#page-4" class="block">skill</a></li>
+                <li class="cell page-5-menu-item"><a href="#page-5" class="block">design</a></li>
+                <li class="cell page-6-menu-item"><a href="#page-6" class="block">copy & redesign</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-indicator-box"></div>
+
+
+    <div class="pages">
+        <div data-section-name="page-1" class="page page-1 relative">
+            <div id="header relative">
+                <div class="bg">
+                    <h1 class="">port folio</h1>
+                </div>
+            </div>
+        </div>    
+        <div data-section-name="page-2" class="page page-2 ">
+            <div class="title text-align-center">
+                <span><i class="fas fa-bicycle"></i>profile<i class="fas fa-bicycle"></i></span>
+            </div>
+            <ul class="inner row">
+                <li class="cell">
+                    <div class="img-box">
+                        <a href="#">
+                            <img class="profile" src="./img/limyoungmi.jpg" alt="image" border="0" />
+                        </a>
+                   </div>
+                </li>
+                <div class="text-box cell">
+                    <div class="text-box-inner">
+                        <div>
+                            <span class="title">name : </span>
+                            <span>임영미 Lim Young Mi</span>
+                        </div>
+                        <div>
+                            <span class="title">address : </span>
+                            <span>대전 광역시 서구 관저동로 42</span>
+                            <br>
+                            <span class="address">느리울마을 1306동 1001호</span>
+                        </div>
+                        <div>
+                            <span class="title">phone-number : </span>
+                            <span>010 - 4719 - 5878</span>
+                        </div>
+                        <div><span class="title">e-mail : </span>
+                            <span>homess1204@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </ul>    
+         </div>
+
+        <div data-section-name="page-3" class="page page-3 ">
+            <div class="title text-align-center">
+                <span><i class="fas fa-bicycle"></i>history<i class="fas fa-bicycle"></i></span>
+            </div>
+            <div class="inner row">
+
+                <div class="text-box cell">
+                    <div class="text-box-inner">
+                        <div> - 1992년 12월 15일 출생</div>
+                        <div> - 2008년 4월 4일 한글 ITQ 취득</div>
+                        <div> - 2011년 2월 서일 여자 고등학교 졸업</div>
+                        <div> - 2012년 8월 29일 운전 면허 1종 취득</div>
+                        <div> - 2013년 2월 대전 과학 기술 대학교 졸업</div>
+                        <div> - 2013년 11월 28일 엑셀 ITQ 취득</div>
+                        <div> - 2014년 1월 2일 파워포인트 ITQ 취득</div>
+                        <div> - 2019년 10월 컴퓨터 그래픽스 운용 기능사 필기 합격</div>
+                        <div> - 2019년 10월 웹 디자인 기능사 필기 합격</div>
+                        <div> - 2019년 12월 14일 ACA 일러스트 CC 2015 자격증 취득</div>
+                        <div> - 2019년 12월 14일 ACA 포토샵 CC 2015 자격증 취득</div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div data-section-name="page-4" class="page page-4 ">
+            <div class="title text-align-center">
+                <span><i class="fas fa-bicycle"></i>Skill<i class="fas fa-bicycle"></i></span>
+            </div>
+            <div class="inner row">
+                 <div class="text-box cell">
+                    <div class="text-box-inner">
+                        <div class="progressbar-container">
+                          <progressbar v-for="(item, index) in items" :target="item.value">
+                            <div class="progress-value" slot-scope="props">
+                              <span class="lang">{{ item.key }}</span>
+                              <span :class="props.text">{{ item.value }} %</span>
+                            </div>
+                          </progressbar>
+                        </div>
+
+                        <progress value-="50" max="100"/>
+                   </div>
+               </div>
+           </div>
+        </div>    
+        <div data-section-name="page-5" class="page page-5 ">
+            <div class="title text-align-center">
+                <span><i class="fas fa-bicycle"></i>design<i class="fas fa-bicycle"></i></span>
+            </div>    
+                <div class="content">
+                  <div class="slider">
+                    <div>
+                      <div class="image">
+                          <a href="">
+                              <img class="img" src="./img/weather_design.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="slick-text-box">
+                            <h4 class="tit">날씨 어플 디자인</h4>
+                        </div>  <!-- end image -->   <!-- end image -->
+                    </div>
+                    <div>
+                      <div class="image">
+                          <a href="">
+                              <img class="img" src="./img/melon_design.jpg" alt="">
+                          </a>
+                      </div> 
+                      <div class="slick-text-box">
+                          <h4 class="tit">멜론 프로필 디자인</h4>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="image">
+                          <a href="">
+                              <img class="img" src="./img/samsung_gear_s2_design.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="slick-text-box">
+                          <h4 class="tit">삼성 GEAR S2 디자인</h4>
+                      </div>  <!-- end image -->
+                    </div>
+                    <div>
+                      <div class="image">
+                           <a href="">
+                              <img class="img" src="./img/tomato_design.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="slick-text-box">
+                          <h4 class="tit">유기농 토마토 디자인</h4>
+                      </div>  <!-- end image -->
+                    </div>
+                    <div>
+                      <div class="image">
+                         <a href="">
+                              <img class="img" src="./img/airport_design.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="slick-text-box">
+                          <h4 class="tit">항공 안전 기술원 디자인</h4>
+                      </div>   <!-- end image -->
+                    </div>
+                    <div>
+                      <div class="image">
+                          <a href="">
+                              <img class="img" src="./img/kakao_hear_design.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="slick-text-box">
+                          <h4 class="tit">카카오 헤어샵 디자인</h4>
+                      </div>  <!-- end image -->
+                    </div>
+                    <div>
+                      <div class="image">
+                         <a href="">
+                              <img class="img" src="./img/infographic_design_1.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="slick-text-box">
+                          <h4 class="tit">인포 그래픽</h4>
+                      </div>   <!-- end image -->
+                    </div>    
+                  </div> <!-- end slider -->
+                  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <span class="slider__label sr-only"></span>
+                  </div>
+            </div> <!-- end content -->
+        </div>
+        <div data-section-name="page-6" class="page page-6 ">
+            <div class="title text-align-center">
+                <span><i class="fas fa-bicycle"></i>copy & redesign<i class="fas fa-bicycle"></i></span>
+            </div>    
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box">
+                         <a href="https://homess12.github.io/Portfolio/Rolling%20pasta/#page-1">
+                             <img src="./img/rollingpasta.jpg" alt="">
+                        </a>
+                        <div class="text-box-1">
+                            <p class="tit">롤링 파스타 모작</p>
+                        </div>
+                    </div>
+                </li>
+                 <li class="cell">
+                    <div class="img-box">
+                        <a href="https://homess12.github.io/nike/">
+                            <img src="./img/nike.jpg" alt="">
+                        </a>
+                        <div class="text-box-1">
+                            <p class="tit">나이키 모작</p>
+                        </div>
+                    </div>
+                </li>
+                 <li class="cell">
+                    <div class="img-box">
+                        <a href="https://homess12.github.io/jyp/">
+                            <img src="./img/jyp_redesign.jpg" alt="">
+                        </a>
+                        <div class="text-box-1">
+                            <p class="tit">JYP 리디자인</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="footer-wrap">
+                <ul class"row">
+                    <li class"cell">
+                        <a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-kids">SOCIAL</a>
+                        <ul class="footer-social">
+                            <li class="cell">
+                                <a href="https://twitter.com/homess12" target="_blank">
+                                <span class="ns-twiier">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="cell">
+                                <a href="https://www.facebook.com/profile.php?id=100006518054728" target="_blank">
+                                <span class="ns-facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="cell">
+                                <a href="https://www.youtube.com/channel/UCq34ExvnZHrt3QZ0R53Hzvw?view_as=subscriber" target="_blank">
+                                <span class="ns-instagram">
+                                    <i class="fab fa-youtube"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="cell">
+                                <a href="https://www.instagram.com/homess120/?hl=ko" target="_blank">
+                                <span class="ns-instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="cell">
+                                <a href="https://homess1204.tistory.com/" target="_blank">
+                                <img class="tisroty" src="https://i.ibb.co/6wLTmt6/tistory-logo.png" alt="">
+                                </a>
+                            </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="copyright">COPYRIGHT 2020. ALL RIGHT RESERVED</div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
